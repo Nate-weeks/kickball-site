@@ -1,0 +1,11 @@
+<body>
+  <h1>Teams!</h1>
+
+  <ul>
+  <% @teams.each do |team| %></h1>
+    <li>
+      <a href="/teams/<%= team.name %>">
+    <%= team.name %></li>
+    <% end %>
+  </ul>
+</body>

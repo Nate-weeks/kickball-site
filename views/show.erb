@@ -1,0 +1,6 @@
+<h3><%= @team %></h3>
+<ul>
+  <% @data[@team.to_sym].each do |position, player| %>
+  <li><%= "#{player}:  #{position}"%></li>
+  <% end %>
+</ul>
